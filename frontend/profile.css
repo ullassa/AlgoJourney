@@ -1,0 +1,12 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; background: #f4f7fa;
+}
+.profile-nav { background: #222; padding: 14px 24px; }
+.profile-nav a { color: #ffa726; text-decoration: none; font-weight: 600; }
+.profile-main { max-width: 480px; margin: 36px auto; }
+.profile-card {
+  background: #fff; border-radius: 20px; box-shadow: 0 2px 18px #2222;
+  padding: 32px; margin-top: 12px;
+}
+.profile-stats { margin-top: 18px; }

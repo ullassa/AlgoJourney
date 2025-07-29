@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AlgoLog – DSA Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">AlgoLog</div>
+    <nav>
+      <ul>
+        <li id="navProblems" class="active">Problems</li>
+        <li id="navProfile"><a href="profile.html" target="_blank">Profile</a></li>
+        <li id="navStats">Stats</li>
+      </ul>
+    </nav>
+    <div class="sidebar-bottom">
+      <button id="darkModeToggle">🌙</button>
+    </div>
+  </aside>
+  <main>
+    <header>
+      <h1>DSA Problem Manager</h1>
+      <div class="user-bar">
+        <span id="userEmailDisplay"></span>
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" class="hidden">Logout</button>
+      </div>
+    </header>
+    <section id="problemsSection">
+      <form id="addProblemForm">
+        <input id="title" placeholder="Title" required>
+        <input id="topic" placeholder="Topic" required>
+        <select id="platform" required>
+          <option value="">Platform</option>
+          <option>LeetCode</option>
+          <option>GFG</option>
+          <option>Codeforces</option>
+          <option>Others</option>
+        </select>
+        <select id="difficulty" required>
+          <option value="">Difficulty</option>
+          <option>Easy</option>
+          <option>Medium</option>
+          <option>Hard</option>
+        </select>
+        <input id="link" placeholder="Link (optional)">
+        <button type="submit">Add</button>
+      </form>
+      <div class="filters">
+        <select id="filterPlatform">
+          <option value="">All Platforms</option>
+          <option>LeetCode</option>
+          <option>GFG</option>
+          <option>Codeforces</option>
+          <option>Others</option>
+        </select>
+        <select id="filterDifficulty">
+          <option value="">All Difficulties</option>
+          <option>Easy</option>
+          <option>Medium</option>
+          <option>Hard</option>
+        </select>
+        <select id="filterSolved">
+          <option value="">All</option>
+          <option value="Solved">Solved</option>
+          <option value="Unsolved">Unsolved</option>
+        </select>
+        <input id="searchBar" placeholder="Search...">
+      </div>
+      <div id="problemsList"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

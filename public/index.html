@@ -1,0 +1,258 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AlgoLog DSA Practice Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span>📈</span> AlgoLog
+      </div>
+      <nav>
+        <ul>
+          <li id="navProblems" class="active"><span>🗂️</span> Problems</li>
+          <li><a href="profile.html" style="color: inherit; text-decoration: none;"><span>👤</span> Profile</a></li>
+          
+          <li id="navProgress"><span>📊</span> Progress</li>
+          <li id="navSettings"><span>⚙️</span> Settings</li>
+        </ul>
+      </nav>
+      <div class="sidebar-bottom">
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <h1>DSA Practice Manager</h1>
+      </header>
+
+      <div class="user-info-bar" id="userInfoBar">
+        <span id="userEmailDisplay">guest@algolog.com</span>
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" class="hidden">Logout</button>
+      </div>
+
+      <!-- Problems Section 
+      <section id="problemsMainSection">
+        <form id="addProblemForm">
+          <input id="problemTitle" placeholder="Title" required>
+          <input id="problemTopic" placeholder="Topic (e.g. DP, Graph)" required>
+          <select id="problemPlatform" required>
+            <option value="">Platform</option>
+            <option>LeetCode</option>
+            <option>GFG</option>
+            <option>Codeforces</option>
+            <option>Others</option>
+          </select>
+          <select id="problemDifficulty" required>
+            <option value="">Difficulty</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+          <input id="problemLink" placeholder="Link (optional)">
+          <button type="submit">➕ Add</button>
+        </form>
+        <div class="filters">
+          <select id="filterDifficulty">
+            <option value="">All Difficulties</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+          <select id="filterPlatform">
+            <option value="">All Platforms</option>
+            <option>LeetCode</option>
+            <option>GFG</option>
+            <option>Codeforces</option>
+            <option>Others</option>
+          </select>
+          <select id="filterSolved">
+            <option value="">All</option>
+            <option value="Solved">Solved</option>
+            <option value="Unsolved">Unsolved</option>
+          </select>
+          <input id="searchBar" placeholder="Search by Title or Topic...">
+          <button id="exportBtn">⬇️</button>
+        </div>
+        <div id="problemsList" class="problems-list"></div>
+      </section>
+
+      <!-- Profile Section 
+      <section id="profileSection" class="hidden">
+        <h2>👤 User Profile</h2>
+
+        <div class="profile-info">
+          <h3>👥 User Information</h3>
+          <p><strong>Name:</strong> <span id="profileName">Loading...</span></p>
+          <p><strong>Username:</strong> <span id="profileUsername">Loading...</span></p>
+          <p><strong>Email:</strong> <span id="profileEmail">Loading...</span></p>
+          <p><strong>Location:</strong> <span id="profileLocation">Loading...</span></p>
+          <p><strong>Role:</strong> <span id="profileRole">Student</span></p>
+          <p><strong>Account Type:</strong> <span id="profileAccountType">Free</span></p>
+          <button id="profileEditBtn">✏️ Edit</button>
+          <button id="profileResetPW">🔐 Reset Password</button>
+          <p id="pwResetMsg"></p>
+        </div>
+
+        <div class="profile-stats">
+          <h3>📊 Performance</h3>
+          <p><strong>Total Problems Added:</strong> <span id="profileTotal">0</span></p>
+          <p><strong>Solved:</strong> <span id="profileSolved">0</span></p>
+          <p><strong>Unsolved:</strong> <span id="profileUnsolved">0</span></p>
+          <p><strong>Success Rate:</strong> <span id="profileSuccessRate">0%</span></p>
+          <p><strong>Last Active:</strong> <span id="profileLastActive">--</span></p>
+          <p><strong>Current Streak:</strong> <span id="profileStreak">0 days</span></p>
+          <p><strong>Last Solved:</strong> <span id="profileLastSolved">--</span></p>
+        </div>
+      </section>
+
+   
+      <section id="progressSection" class="hidden">
+        <h2>📊 Your Progress</h2>
+        <p>Coming soon... Charts, streaks, heatmaps etc.</p>
+      </section>
+
+       Settings Section
+      <section id="settingsSection" class="hidden">
+        <h2>⚙️ Settings</h2>
+        <p>Coming soon... Theme, Notifications, Preferences.</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AlgoLog DSA Practice Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-header"><span>📈</span> AlgoLog</div>
+      <nav>
+        <ul>
+          <li id="navProblems" class="active"><span>🗂️</span> Problems</li>
+          <li id="navProfile"><span>👤</span> Profile</li>
+          <li id="navProgress"><span>📊</span> Progress</li>
+          <li id="navSettings"><span>⚙️</span> Settings</li>
+        </ul>
+      </nav>
+      <div class="sidebar-bottom">
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <h1>DSA Practice Manager</h1>
+        <div class="user-info-bar" id="userInfoBar">
+          <span id="userEmailDisplay"></span>
+          <button id="loginBtn">Login</button>
+          <button id="logoutBtn" class="hidden">Logout</button>
+        </div>
+      </header>
+      <section id="loginSection" class="hidden">
+        <form id="loginForm" class="card">
+          <h2>Login / Register</h2>
+          <input id="authEmail" type="email" placeholder="Email" required>
+          <input id="authPassword" type="password" placeholder="Password" required>
+          <input id="authName" placeholder="Name (for Register)" autocomplete="off">
+          <input id="authUsername" placeholder="Username (for Register)" autocomplete="off">
+          <button type="submit" id="loginSubmitBtn">Login</button>
+          <button type="button" id="registerBtn">Register</button>
+          <div id="authErrorMsg" class="error"></div>
+        </form>
+      </section>
+      <section id="problemsMainSection">
+        <form id="addProblemForm">
+          <input id="problemTitle" placeholder="Title" required>
+          <input id="problemTopic" placeholder="Topic (e.g. DP, Graph)" required>
+          <select id="problemPlatform" required>
+            <option value="">Platform</option>
+            <option>LeetCode</option>
+            <option>GFG</option>
+            <option>Codeforces</option>
+            <option>Others</option>
+          </select>
+          <select id="problemDifficulty" required>
+            <option value="">Difficulty</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+          <input id="problemLink" placeholder="Link (optional)">
+          <button type="submit">➕ Add</button>
+        </form>
+        <div class="filters">
+          <select id="filterDifficulty">
+            <option value="">All Difficulties</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+          <select id="filterPlatform">
+            <option value="">All Platforms</option>
+            <option>LeetCode</option>
+            <option>GFG</option>
+            <option>Codeforces</option>
+            <option>Others</option>
+          </select>
+          <select id="filterSolved">
+            <option value="">All</option>
+            <option value="Solved">Solved</option>
+            <option value="Unsolved">Unsolved</option>
+          </select>
+          <input id="searchBar" placeholder="Search by Title or Topic...">
+          <button id="exportBtn">⬇️</button>
+        </div>
+        <div id="problemsList" class="problems-list"></div>
+      </section>
+      <section id="profileSection" class="hidden">
+        <div class="profile-card">
+          <h2>Profile</h2>
+          <form id="profileForm">
+            <div><strong>Name:</strong> <input id="profileName" autocomplete="off"></div>
+            <div><strong>Username:</strong> <input id="profileUsername" autocomplete="off"></div>
+            <div><strong>Email:</strong> <span id="profileEmail"></span></div>
+            <div><strong>Location:</strong> <input id="profileLocation" autocomplete="off"></div>
+            <div><strong>Role:</strong> <input id="profileRole" autocomplete="off"></div>
+            <div><strong>Account Type:</strong> <input id="profileAccountType" autocomplete="off"></div>
+            <button type="submit">Save Profile</button>
+          </form>
+          <div class="profile-stats">
+            <h3>Stats</h3>
+            <div><strong>Total Problems:</strong> <span id="profileTotal"></span></div>
+            <div><strong>Solved:</strong> <span id="profileSolved"></span></div>
+            <div><strong>Unsolved:</strong> <span id="profileUnsolved"></span></div>
+            <div><strong>Success Rate:</strong> <span id="profileSuccessRate"></span></div>
+            <div><strong>Last Active:</strong> <span id="profileLastActive"></span></div>
+            <div><strong>Streak:</strong> <span id="profileStreak"></span></div>
+            <div><strong>Last Solved:</strong> <span id="profileLastSolved"></span></div>
+          </div>
+        </div>
+      </section>
+      <section id="progressSection" class="hidden">
+        <div class="progress-card">
+          <h2>Progress</h2>
+          <p>Coming Soon: Progress charts, streaks, and more!</p>
+        </div>
+      </section>
+      <section id="settingsSection" class="hidden">
+        <div class="settings-card">
+          <h2>Settings</h2>
+          <p>Theme, account, and notification settings coming soon!</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
