@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int choice;
 
-        System.out.println("👋 Welcome to AlgoLog Tracker (DSA Problem Manager)");
+        System.out.println("👋 Welcome t AlgoLog Tracker (DSA Problem Manager)");
 
         do {
             System.out.println("\n📋 Menu:");
