@@ -25,7 +25,7 @@ AlgoJourney is a personal DSA practice manager that helps students and developer
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Authentication:** Firebase Auth
-- **Hosting:** GitHub Pages (frontend)
+- **Hosting:** GitHub Pages (frontends)
 
 ## 📌 Current Status
 - ✅ Basic UI ready  
@@ -55,3 +55,4 @@ This project is licensed under the MIT License.
 
 👨‍💻 Built solo as part of my **Full-Stack Developer Journey**  
 #WebDevelopment #DSA #MERN #Firebase #PlacementPrep
+
